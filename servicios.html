@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Servicios| Potro Hermandad</title>
+        <link rel="stylesheet" href="css/pot.css"><!-- Vinculación a los estilos css -->
+    
+        <meta charset="utf-8">
+    
+        <meta name="author" content="Edson Garduño Robles">
+    
+         <meta name="author" charset="UTF-8">
+    
+        <meta name="description" content="Sitio para comprar huertos, asi como asistencia en su cuidado">
+    
+    </head>
+    <body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="Index.html">Inicio</a>
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="formulario.html">Contacto</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="#">Equipo</a>
+            </div>
+        </nav>
+
+         <div class="header__img"><!-- Clase para poner la imagen de fondo  -->
+            <a href="#">
+                <img class="header_img" src="img/header.jpg" alt=""><!-- Imagen de fondo -->
+                <div class="centrado_txt"><!-- Clase para el texto  -->
+                    <h1> Ichi´i Huertos</h1>
+                </div>
+                <div class="centrado_img">
+                    <img  class="centrado_img" src="img/Ichii logo.png" alt=""  >
+                </div>
+            </a>
+            
+        </div>
+    </header>
+
+    <?php 
+    <div class="titulo">
+        <h3>Servicios Potro Hermandad</h3>
+    </div>
+
+
+    <form action="buscar_servicio.php" method="get" class="form_search">
+       
+        <input type="text" name="busqueda" id="busqueda" placeholder="Busca tu servicio">
+        <input type="submit" value="Buscar" class="btn_search">
+
+
+    </form>
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Servicio</th>
+            <th>Carrera</th>
+            <th>Semestre</th>
+        </tr>    
+    </table>
+
+    ?>
+
+
+    </body>

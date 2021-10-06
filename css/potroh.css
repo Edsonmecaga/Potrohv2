@@ -1,0 +1,614 @@
+/* * ============================== */
+/* * =====GENERALES DEL SITIO====== */
+/* * ============================== */
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+	
+}
+
+/* * ============================== */
+/* * =====  MENU DEL INICIO  ====== */
+/* * ============================== */
+
+a{
+    font-family:'Montserrat', sans-serif;/* Fuentes */
+    text-decoration: none;/* Sin decoración de texto para quitar lo subrayado */
+    
+}
+
+
+.container {/* Estilos del contenedor del menú */
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+    color: beige;
+}
+
+.navbar {/* Estilos de cada casilla */
+	background: #477551;; /* Colores utilizados en la página de la universidad */
+    position:sticky;
+    top: 0  ;
+    object-fit: cover;
+    
+    
+}
+
+.navbar a {/* Estilos de las etiquetas a en las casillas  */
+	color: #fff;
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	color: rgb(240, 234, 234);
+	transition: .3s ease-out all;
+}
+
+.navbar a:hover { /* Estilos para animar mientras el cursor está arriba de los botones */
+	background: #709477;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/* * ============================== */
+/* * =====IMAGEN DEL MENU FONDO==== */
+/* * ============================== */
+
+
+.header_img{
+    width: 100%;/* Anho al 100% */
+    height: 635px;/* Altura para que abarque toda la pantalla principal */
+	vertical-align: top;
+	object-fit: cover;
+	object-position: 0 bottom;
+    
+}
+
+
+.centrado_txt{/*Clase para el Nombre de la empresa */
+    position: absolute;
+    top: 70%;/* Altura para que el texto quede debajo del logotipo */
+    left: 50%;/* Alineación izquierda al 50% para que este centrado */
+    transform: translate(-50%, -50%);/* Posición centrada */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-style: oblique;
+}
+
+
+.centrado_img{/* Clase para el Logotipo */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    object-position: 0 bottom;
+    object-fit:scale-down;
+    top: 50%;
+    left: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+/* * ===== ESTILOS DEL INDEX ====== */
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+
+
+/* * ============================== */
+/* * =====  TITULOS DE LOS DIV ==== */
+/* * ============================== */
+
+.titulo{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+
+
+/* * ============================== */
+/* * ====INF. PROPOSITO EMPRESA==== */
+/* * ============================== */
+
+
+.proposito{/* estilos del contenedor para poder aplicar el aside para imagen y texto */
+    max-width: 1000px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.proposito_img{/* Estilos de la imagen alusiva a los propósitos  */
+    border-radius: 10%;/* Redondeo de bordes */
+    
+}
+.proposito_txt{/* Estilo del texto del propósito  */
+   width:90%;
+   margin-bottom: 20px;
+   line-height: 30px;
+   color: #525151;
+    
+}
+
+
+
+/* * ============================== */
+/* * ===  VIDEO DEL PROPOSITO   === */
+/* * ============================== */
+
+.video {
+    position: relative;
+    left: 20%;
+    width: 60%;
+    height: 320px;
+    }
+
+    
+
+
+/* * ============================== */
+/* * ===TABLA DE MEDIDAS HUERTOS=== */
+/* * ============================== */
+table{
+    padding: 80px;
+    width: 100%;
+    border: 1px solid #1caf28;
+    padding: 8px;
+}
+
+th, td{
+    width: 25%;
+    border: 1px solid #1caf28;
+    text-align: center;
+}
+.medidas{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 100px;
+    
+}
+.icon{/* La imagen en la tabla no la puse muestreada porque no encontre un contexto en el que pudiera poner una imagen de fondo y la estética de la página se perdería */
+    width: 20px;
+    height: 15px;
+}
+
+
+/* * ============================== */
+/* * ===TITULOS DE LOS HUERTOS=== */
+/* * ============================== */
+
+
+main {/* Contiene todas las clases para poder dividir la informacion en pantalla */
+	min-height: 100vh;
+}
+
+main .huertos p {/* Informacion de los huertos */
+	margin-bottom: 20px;
+	line-height: 30px;
+	color: #525151;
+}
+
+
+.contenedor {/* Contenido de la informacion */
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+/* * ============================== */
+/* * ===== MENU ASIDE HUERTOS  ==== */
+/* * ============================== */
+
+
+.anclas {/* Estilos menú de anclas  */
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+    
+}
+
+.menu {/* Contenedor de toda la informacion del menu de huertos */
+	min-width: 30%;
+	margin: 40px 20px 20px 0;
+	height: 100%;
+	background: #9e5706;
+	padding: 20px;
+	border-radius: 3px;
+    position: sticky;
+    top: 20px;
+}
+.menu .title {/* Titulo del menu*/
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #f2f2f2;
+}
+
+.menu .indice__anclas a {/* Titulos de los huertos  */
+	display: block;
+	margin-bottom: 10px;
+	color: #FFCD48;
+}
+
+
+
+/* * ============================== */
+/* * ===== ETIQUETAS DE TEXTO  ==== */
+/* * ============================== */
+
+
+p{
+    text-align: justify;
+    font-family: helvetica; 
+    font-variant: initial; 
+    margin-bottom: 20px;
+	line-height: 30px;
+    padding: 40px;
+}
+
+h1, h6{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #bea52a;
+}
+
+h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+}
+
+h4, h3{
+    text-align: center; 
+    color:#009933;
+    font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	padding-top: 40px;
+}
+
+
+
+
+
+/* * ============================== */
+/* * ===IMAGENES GENERALES INDEX=== */
+/* * ============================== */
+
+.index_img{
+    display:block;
+    margin:auto;
+    width: 500;
+    height: 300px;
+    align-content: center;
+    border-radius: 10%;/* Redondea el brode de las imagenes */
+    transition: .5s;
+
+}
+
+
+.index_img:hover{/* Animacion cuando el cursor se encuentra sobre la imagen */
+    display:block;
+    align-content: center;
+    transition: all .5s ease-out;
+    width: 550;/* Aumenta el width en 10% al pasar el cursor */
+    height: 330px;/* Aumeta el height en 10% al pasar el cursor */
+
+
+}
+
+
+
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+/* * =====ESTILOS DE NOSOTROS====== */
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+
+
+/* * ============================== */
+/* * =====      PROPOSITO      ==== */
+/* * ============================== */
+
+
+.purpose, .vision, .mission{/* estilos del contenedor para poder aplicar el aside para imagen y texto */
+    max-width: 1000px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.purpose_img, .vision_img, .mission_img{
+    width: 300px;
+    width: 350px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding:10px;
+    border-radius: 10%;
+}
+
+.purpose_txt,  .vision_txt, .mission_txt {
+   width:90%;
+   margin-bottom: 20px;
+   line-height: 30px;
+   color: #525151;
+   align-content: center;
+   padding: 10px;
+}
+
+/* * ============================== */
+/* * =====     INTEGRANTES     ==== */
+/* * ============================== */
+
+.profile{
+    text-align: center;
+    font-family:  'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+.profile_txt{
+    width:90%;
+   margin-bottom: 5px;
+   line-height: 10px;
+   color: #525151;
+   padding: 10px;
+
+}
+
+
+h2{
+    color: black;
+    font-family:  Helvetica, Arial, sans-serif; 
+    font-style: inherit;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h4{
+    text-align: center; 
+    color:#009933;
+    font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	
+}
+
+
+p{
+    text-align: justify;
+    font-family: helvetica; 
+    font-variant: initial; 
+}
+
+.team_img{
+    
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    align-items: center;
+    padding:7px;
+}
+
+
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+/* * =====ESTILOS DE CONTACTO====== */
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+
+
+:root{
+    --colorTextos:#7c4404;/* Variable para aplicar el color de texto a todos los requerimientos del formulario */
+}
+.suscription{
+    padding-top: 40px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.title{/* Título del formulario */
+    text-align: center;
+    font-weight: 700px;
+    font-family: 'Montserrat', sans-serif;
+    color:  #009933;/* Color standard de la página */
+}
+
+form{
+    background: hsla(0, 0%, 57%, 0.184);/* Color background de todo el formulario */
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 15px;/* Bordes redondeados del formulario */
+}
+
+.form{/* Clase form */
+    width: 100%;
+    margin: auto;
+}
+
+.form .grupo{
+    position: relative;
+    margin: 45px;
+    
+
+    
+}
+
+input{/* Entradas */
+    background: none;
+    color: #52ce7b;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display:block;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos) ;/* Se ocupa la vaiable de los colores */
+    width: 100%;
+}
+
+input:focus{/* Focus en las entradas */
+    outline: none;
+    color: #6fb887;
+}
+
+label{
+    color: var(--colorTextos);/* Se ocupa la vaiable de los colores */
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all ;
+    pointer-events: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+input:focus~label, /* Cuando se esta trabajando en la parte del input los hermanos label ejecutan el estilo*/
+input:valid~label{/* Cuando la entrada es validada conforme al formato del input se mantiene el estilo de animación */
+    top: -15px;/* Aparenta que el texto sube */
+    font-size: 12px;/* El texto asemeja que se aleja al hacerse más pequeño */
+    color: #009933;/* El color cambia  */
+    
+
+}
+
+.delete{/* Clase del botón borrar todo */
+    border: none;
+    background: none;
+    font-family: sans-serif;
+    cursor: pointer;/* Cusor diferente  */
+
+}
+
+.send{/* Botón borrar */
+    border: none;
+    padding: 15px;
+    width: 80%;
+    margin: 10px;
+    display: block;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#00993385;
+    cursor: pointer;
+}
+
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+/* * =====ESTILOS DE GALERIA ====== */
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+/* * ============================== */
+
+
+.linea{
+    background:#7c4404;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap:10px;
+    padding: 40px 0;
+    overflow: hidden;
+    
+}
+
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px #1D2F3D;
+}
+
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.galeria img:hover   {
+    transform: rotate(5deg) scale(1.1);
+    filter: opacity(80%);
+    
+    object-fit: cover;
+}
+
+/* * ============================== */
+/* * ===         FOOTER         === */
+/* * ============================== */
+
+
+.footer-style {
+    padding-top: 50px;
+    background-color: #2C3E50;
+}
+footer {
+  color: white;
+}
+.footer_h3{
+  margin-bottom: 30px;
+    font-weight: 800;
+}
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #2C3E50;
+}
+footer .footer-col {
+  margin-bottom: 50px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140;
+}
+
+
+
+
+
+
+
+
